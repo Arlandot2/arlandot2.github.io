@@ -1,31 +1,36 @@
-/** Animation typign home  pas encore marché*/
-var typed = new Typed(".typing",{
-    strings:[" ","Data analysis ","web Desiger","Web Developper","Graphic Designer", "Influenceur"],
-    typeSpeed: 100,
-    BackSpeed: 60,
-    loop: true
-    
-})
+const menuButton = document.querySelector('.menu-button');
+const navigation = document.querySelector('.site-nav');
+const themeButton = document.querySelector('.theme-button');
 
-function showSectionAbout(){
-   
-    document.getElementById("about").classList.remove("hidden");
-    document.getElementById("about").classList.add("active");  
-    document.getElementById("home").classList.add("hidden");
-    document.getElementById("home").classList.remove("active");
-    document.getElementById("service").classList.add("hidden");
-    document.getElementById("portfolio").classList.add("hidden");
-    document.getElementById("contact").classList.add("hidden");
-    
- 
+function closeMenu() {
+  navigation.classList.remove('is-open');
+  menuButton.setAttribute('aria-expanded', 'false');
+  menuButton.setAttribute('aria-label', 'Ouvrir le menu');
 }
 
-function toggleSections(sectionToShow,sectionToHide){
-    var sectionToShowElement = document.getElementById(sectionToShow);
-    sectionToShowElement.classList.remove("hidden");
-    var sectionToHideElement = document.getElementById(sectionToHide);
-    sectionToHideElement.classList.add("hidden");
+menuButton.addEventListener('click', () => {
+  const isOpen = navigation.classList.toggle('is-open');
+  menuButton.setAttribute('aria-expanded', String(isOpen));
+  menuButton.setAttribute('aria-label', isOpen ? 'Fermer le menu' : 'Ouvrir le menu');
+});
 
+navigation.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMenu));
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') closeMenu();
+});
+
+function applyTheme(theme) {
+  document.documentElement.dataset.theme = theme;
+  themeButton.setAttribute('aria-label', theme === 'dark' ? 'Activer le thème clair' : 'Activer le thème sombre');
 }
 
+let savedTheme;
+try { savedTheme = localStorage.getItem('portfolio-theme'); } catch (_) { /* Stockage indisponible. */ }
+applyTheme(savedTheme === 'dark' ? 'dark' : 'light');
+themeButton.addEventListener('click', () => {
+  const theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+  applyTheme(theme);
+  try { localStorage.setItem('portfolio-theme', theme); } catch (_) { /* Stockage indisponible. */ }
+});
 
+document.getElementById('year').textContent = new Date().getFullYear();
