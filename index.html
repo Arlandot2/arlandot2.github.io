@@ -1,34 +1,55 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="fr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Portfolio de Jaonina Arlandot Ramanarintsoa : développement web, analyse de données et projets réalisés à Madagascar.">
-  <meta name="theme-color" content="#102a43">
+  <meta name="description" content="Portfolio de Jaonina Arlandot Ramanarintsoa, développeur full stack et coordinateur de projet web spécialisé en solutions web sur mesure, WordPress, React, Django, Symfony et data.">
+  <meta name="theme-color" content="#0f2f3a">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Jaonina Arlandot Ramanarintsoa | Développeur web">
-  <meta property="og:description" content="Découvrez mon parcours, mes compétences et mes projets en développement web et analyse de données.">
-  <meta property="og:image" content="https://arlandot2.github.io/images/ville.png">
+  <meta property="og:title" content="Jaonina Arlandot Ramanarintsoa | Développeur Full Stack">
+  <meta property="og:description" content="Création, amélioration et maintenance de solutions web sur mesure pour accompagner l'évolution des entreprises.">
+  <meta property="og:image" content="https://arlandot2.github.io/assets/images/Arlandot.png">
   <title>Jaonina Arlandot Ramanarintsoa | Portfolio</title>
-  <link rel="icon" href="images/logo.png">
-  <link rel="stylesheet" href="style.css">
-  <script src="script/script.js" defer></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/script/script.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <a class="scroll-top" href="#accueil" aria-label="Accueil" title="Accueil">
+    <span aria-hidden="true">↑</span>
+  </a>
+
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#accueil" aria-label="Jaonina Arlandot, accueil"><span class="brand-mark">JA<span>.</span></span><span>Arlandot</span></a>
-      <button class="menu-button" type="button" aria-controls="navigation" aria-expanded="false" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+      <a class="brand" href="#accueil" aria-label="Jaonina Arlandot, accueil">
+        <span class="brand-mark" aria-hidden="true">JA.</span>
+        <span class="brand-name">Arlandot</span>
+      </a>
+
+      <button class="menu-button" type="button" aria-controls="navigation" aria-expanded="false" aria-label="Ouvrir le menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
       <nav class="site-nav" id="navigation" aria-label="Navigation principale">
-        <a href="#accueil">Accueil</a>
-        <a href="#apropos">À propos</a>
-        <a href="#competences">Compétences</a>
-        <a href="#projets">Projets</a>
+        <a href="#services">Services</a>
+        <a href="#realisations">Réalisations</a>
         <a href="#parcours">Parcours</a>
-        <a class="nav-contact" href="#contact">Contact</a>
+        <a href="#competences">Compétences</a>
+        <a href="#contact">Contact</a>
       </nav>
-      <button class="theme-button" type="button" aria-label="Activer le thème sombre" title="Changer de thème">◐</button>
+
+      <button class="theme-button" type="button" aria-label="Activer le thème sombre" title="Changer de thème">
+        <svg class="theme-icon theme-icon-sun" aria-hidden="true" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2.2M12 19.8V22M4.9 4.9l1.6 1.6M17.5 17.5l1.6 1.6M2 12h2.2M19.8 12H22M4.9 19.1l1.6-1.6M17.5 6.5l1.6-1.6"></path>
+        </svg>
+        <svg class="theme-icon theme-icon-moon" aria-hidden="true" viewBox="0 0 24 24">
+          <path d="M20.5 15.2A8 8 0 0 1 8.8 3.5 8.5 8.5 0 1 0 20.5 15.2Z"></path>
+          <path d="M14 4.5h5"></path>
+        </svg>
+      </button>
     </div>
   </header>
 
@@ -36,49 +57,293 @@
     <section class="hero" id="accueil" aria-labelledby="hero-title">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="status-dot"></span> Portfolio · Madagascar</p>
-          <h1 id="hero-title">Bonjour, je suis <span>Jaonina Arlandot.</span></h1>
-          <p class="hero-role">Développement web &amp; analyse de données</p>
-          <p class="hero-description">Je conçois des interfaces web et j'explore les données pour rendre l'information plus claire et les outils plus utiles.</p>
-          <div class="hero-actions"><a class="button button-primary" href="#projets">Voir mes projets <span aria-hidden="true">↗</span></a><a class="button button-secondary" href="#contact">Me contacter</a></div>
-          <div class="hero-note">Java · Python · JavaScript · HTML &amp; CSS</div>
+          <p class="eyebrow"><span class="status-dot"></span> Portfolio</p>
+          <h1 id="hero-title" class="animated-name" aria-label="Jaonina Arlandot">
+            <span class="name-fixed">J.</span>
+            <span class="typing-name" aria-hidden="true">Arlandot</span>
+          </h1>
+          <p class="hero-role">Développeur Full Stack &amp; Coordinateur de projet web</p>
+          <p class="hero-description">Je conçois et fais évoluer des solutions web sur mesure pour aider les entreprises à structurer leur présence en ligne, automatiser certaines tâches et faire progresser leurs outils métier.</p>
+          <div class="hero-actions" aria-label="Actions principales">
+            <a class="button button-primary" href="#realisations">Voir mes projets</a>
+            <a class="button button-secondary" href="#contact">Me contacter</a>
+            <a class="button button-ghost" href="assets/doc/cv-jaonina-arlandot.pdf" target="_blank" rel="noopener noreferrer">Télécharger mon CV</a>
+          </div>
+          <div class="hero-tags" aria-label="Spécialités">
+            <span>WordPress sur mesure</span>
+            <span>Thèmes &amp; plugins</span>
+            <span>React</span>
+            <span>Django</span>
+            <span>Symfony</span>
+            <span>Data</span>
+          </div>
         </div>
-        <div class="hero-visual"><div class="portrait-frame"><img src="images/ville.png" alt="Portrait de Jaonina Arlandot Ramanarintsoa" width="720" height="1088" fetchpriority="high"></div><div class="portrait-caption"><span>Jaonina Arlandot</span><span>Développeur web</span></div></div>
-      </div>
-    </section>
 
-    <section class="section section-light" id="apropos" aria-labelledby="about-title">
-      <div class="container about-grid">
-        <div><p class="section-kicker">01 / Présentation</p><h2 id="about-title">Un profil à la croisée du web et des données.</h2></div>
-        <div class="about-copy"><p>Je suis Jaonina Arlandot Ramanarintsoa, développeur web avec une formation en informatique à l'Université de Toamasina. Mon parcours associe la création d'applications, la programmation et l'analyse de données.</p><p>J'utilise notamment Java, Python et les technologies du web. Mes travaux présentés ici comprennent un tableau de bord de transactions et une interface de gestion des ventes en pharmacie.</p><a class="text-link" href="#parcours">Découvrir mon parcours <span aria-hidden="true">↗</span></a></div>
-      </div>
-    </section>
-
-    <section class="section" id="competences" aria-labelledby="skills-title">
-      <div class="container"><div class="section-heading"><div><p class="section-kicker">02 / Savoir-faire</p><h2 id="skills-title">Ce que je pratique</h2></div><p>Des compétences techniques mobilisées pour concevoir, développer et comprendre.</p></div>
-        <div class="skills-grid">
-          <article class="skill-card"><span class="card-number">01</span><h3>Développement web</h3><p>Création d'interfaces et de fonctionnalités pour des applications web.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Java EE</span></div></article>
-          <article class="skill-card"><span class="card-number">02</span><h3>Analyse de données</h3><p>Manipulation, exploration et présentation de données avec Python.</p><div class="tags"><span>Python</span><span>NumPy</span><span>Pandas</span><span>scikit-learn</span></div></article>
-          <article class="skill-card"><span class="card-number">03</span><h3>Résolution de problèmes</h3><p>Une approche structurée, nourrie par les mathématiques et l'enseignement.</p><div class="tags"><span>Analyse</span><span>Pédagogie</span><span>Support</span></div></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-light" id="projets" aria-labelledby="projects-title">
-      <div class="container"><div class="section-heading"><div><p class="section-kicker">03 / Réalisations</p><h2 id="projects-title">Projets sélectionnés</h2></div><p>Deux aperçus issus du portfolio d'origine. Les captures s'ouvrent en grand format.</p></div>
-        <div class="projects-grid">
-          <article class="project-card"><a class="project-image" href="images/portfolio/portfolioDash.PNG" target="_blank" rel="noopener noreferrer" aria-label="Voir la capture du tableau de bord de transactions"><img src="images/portfolio/portfolioDash.PNG" alt="Interface d'un tableau de bord affichant des indicateurs de transactions et un graphique" loading="lazy"></a><div class="project-content"><p class="project-type">Tableau de bord · Capture d'écran</p><h3>Suivi des transactions</h3><p>Une interface de visualisation présentant les transactions, les articles et des indicateurs de panier.</p><a class="text-link" href="images/portfolio/portfolioDash.PNG" target="_blank" rel="noopener noreferrer">Voir la capture <span aria-hidden="true">↗</span></a></div></article>
-          <article class="project-card"><a class="project-image" href="images/portfolio/portfolioFacture.PNG" target="_blank" rel="noopener noreferrer" aria-label="Voir la capture de l'interface de gestion des ventes"><img src="images/portfolio/portfolioFacture.PNG" alt="Interface de gestion des ventes de médicaments avec formulaire et aperçu de facture" loading="lazy"></a><div class="project-content"><p class="project-type">Gestion · Capture d'écran</p><h3>Ventes en pharmacie</h3><p>Une interface de saisie des ventes de médicaments avec liste des produits vendus et aperçu de facture.</p><a class="text-link" href="images/portfolio/portfolioFacture.PNG" target="_blank" rel="noopener noreferrer">Voir la capture <span aria-hidden="true">↗</span></a></div></article>
+        <div class="hero-visual" aria-label="Photo de Jaonina Arlandot">
+          <div class="portrait-frame">
+            <img src="assets/images/Arlandot.png" alt="Portrait de Jaonina Arlandot Ramanarintsoa" width="640" height="640" fetchpriority="high">
+          </div>
+          <div class="portrait-card">
+            <strong>Des solutions web utiles et adaptées à vos besoins</strong>
+            <span>Création &middot; évolution &middot; suivi technique</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="parcours" aria-labelledby="journey-title"><div class="container"><div class="section-heading"><div><p class="section-kicker">04 / Parcours</p><h2 id="journey-title">Formation &amp; expériences</h2></div><p>Quelques étapes de mon parcours, d'après les informations déjà publiées sur ce site.</p></div>
-      <div class="timeline-grid"><div><h3 class="timeline-heading">Formation</h3><ol class="timeline"><li><span class="timeline-date">2023 — 2024</span><h4>Études de master 2 en génie informatique</h4><p>Université de Toamasina · Études en informatique et pratique de l'analyse de données avec Python.</p></li><li><span class="timeline-date">2019 — 2020</span><h4>Licence en mathématiques, informatique et applications</h4><p>Université de Toamasina · Parcours académique en informatique.</p></li></ol></div><div><h3 class="timeline-heading">Expériences</h3><ol class="timeline"><li><span class="timeline-date">2023 — 2024</span><h4>Vérification des comptes</h4><p>Association universitaire à Toamasina · Examen des comptes et préparation de rapports périodiques.</p></li><li><span class="timeline-date">2020 — 2023</span><h4>Enseignement en lycée</h4><p>Enseignement de la physique-chimie et accompagnement des élèves.</p></li><li><span class="timeline-date">2019</span><h4>Gestion d'un cybercafé</h4><p>Accueil, assistance informatique et gestion courante.</p></li></ol></div></div>
-    </div></section>
+    <section class="section section-soft" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">01 / Services</p>
+            <h2 id="services-title">Des solutions web utiles, maintenables et évolutives.</h2>
+          </div>
+        </div>
 
-    <section class="contact-section" id="contact" aria-labelledby="contact-title"><div class="container contact-grid"><div><p class="section-kicker">05 / Contact</p><h2 id="contact-title">Parlons de votre projet.</h2><p>Pour une collaboration, une question ou simplement pour échanger, écrivez-moi directement.</p></div><div class="contact-actions"><a class="button button-light" href="mailto:jaoninaarlandot@gmail.com?subject=Contact%20depuis%20le%20portfolio">Envoyer un e-mail <span aria-hidden="true">↗</span></a><a class="contact-address" href="mailto:jaoninaarlandot@gmail.com">jaoninaarlandot@gmail.com</a><a class="contact-address" href="https://github.com/Arlandot2" target="_blank" rel="noopener noreferrer">GitHub / Arlandot2 ↗</a></div></div></section>
+        <div class="service-grid">
+          <article class="info-card">
+            <span class="card-label">Création sur mesure</span>
+            <h3>Sites et plateformes web</h3>
+            <p>Je transforme un besoin métier en site, plateforme B2B ou outil web clair, utilisable et adapté au contexte de l'entreprise.</p>
+            <p class="card-value">Valeur : une solution structurée, évolutive et plus simple à faire vivre dans le temps.</p>
+          </article>
+
+          <article class="info-card">
+            <span class="card-label">WordPress avancé</span>
+            <h3>Thèmes, plugins et modules</h3>
+            <p>Je participe à la création de thèmes, plugins, widgets Elementor et modules WordPress adaptés aux besoins réels du projet.</p>
+            <p class="card-value">Valeur : un WordPress personnalisé, moins dépendant des limites d'un thème standard.</p>
+          </article>
+
+          <article class="info-card">
+            <span class="card-label">Accompagnement projet</span>
+            <h3>Coordinateur de projet web</h3>
+            <p>J'aide à cadrer les demandes, organiser les tâches et suivre les évolutions pour garder le lien entre besoin client et réalisation technique.</p>
+            <p class="card-value">Valeur : des priorités plus claires et des améliorations alignées avec les objectifs métier.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="realisations" aria-labelledby="work-title">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">02 / Réalisations</p>
+            <h2 id="work-title">Des réalisations utiles pour créer, améliorer et faire évoluer des solutions web.</h2>
+          </div>
+        
+        </div>
+
+        <div class="work-grid">
+          <article class="work-card">
+            <div class="work-marker">Réalisation complète</div>
+            <h3>Plateforme B2B WordPress</h3>
+            <p><strong>Besoin :</strong> disposer d'une base B2B claire et exploitable pour présenter ou gérer une activité professionnelle.</p>
+            <p><strong>Contribution :</strong> conception et réalisation complète sous WordPress : structure, pages, intégration et adaptations fonctionnelles.</p>
+            <p><strong>Valeur :</strong> une plateforme prête à évoluer selon les besoins métier.</p>
+            <div class="tags"><span>WordPress</span><span>Thème/plugin</span><span>Elementor</span><span>PHP</span><span>JavaScript</span></div>
+          </article>
+
+          <article class="work-card">
+            <div class="work-marker">Contribution majeure</div>
+            <h3>Évolution d'une plateforme B2B React</h3>
+            <p><strong>Besoin :</strong> faire progresser une plateforme existante avec des interfaces plus utiles et des données mieux organisées.</p>
+            <p><strong>Contribution :</strong> mise en place et améliorations importantes sur les interfaces React, les fonctionnalités et la structure des données.</p>
+            <p><strong>Valeur :</strong> une plateforme plus adaptée aux usages internes et aux priorités métier.</p>
+            <div class="tags"><span>React</span><span>PostgreSQL</span><span>API</span><span>Interface</span></div>
+          </article>
+
+          <article class="work-card">
+            <div class="work-marker">Maintenance et évolution</div>
+            <h3>Sites WordPress confiés en maintenance</h3>
+            <p><strong>Besoin :</strong> garder des sites déjà en ligne fiables, à jour et capables d'évoluer.</p>
+            <p><strong>Contribution :</strong> corrections, intégration de contenus, améliorations de pages et ajustements de fonctionnalités.</p>
+            <p><strong>Valeur :</strong> un suivi technique régulier qui soutient la stabilité et la croissance du site.</p>
+            <div class="tags"><span>WordPress</span><span>WooCommerce</span><span>Tutor LMS</span><span>CSS</span><span>JavaScript</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="projets" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">03 / Projets complémentaires</p>
+            <h2 id="projects-title">Données, backend et gestion d'activité.</h2>
+          </div>
+          
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <a class="project-image" href="assets/images/portfolio/portfolioDash.PNG" target="_blank" rel="noopener noreferrer" aria-label="Voir la capture Market Basket Analysis">
+              <img src="assets/images/portfolio/portfolioDash.PNG" alt="Tableau de bord d'analyse de transactions" loading="lazy">
+            </a>
+            <div class="project-content">
+              <span class="card-label">Stage &middot; Caisse d'Epargne Madagascar</span>
+              <h3>Market Basket Analysis</h3>
+              <p>Application web d'analyse de panier de marché pour identifier des associations et produire des recommandations exploitables.</p>
+              <div class="tags"><span>Django</span><span>Pandas</span><span>Data mining</span><span>Similarité cosinus</span></div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-visual ecommerce-visual" aria-hidden="true">
+              <div class="visual-bar"></div>
+              <div class="visual-grid">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="visual-lines">
+                <span></span><span></span><span></span>
+              </div>
+            </div>
+            <div class="project-content">
+              <span class="card-label">Projet académique &middot; 2025</span>
+              <h3>Site e-commerce Symfony</h3>
+              <p>Conception d'un parcours e-commerce avec gestion des produits, commandes, utilisateurs et modélisation Merise.</p>
+              <div class="tags"><span>Symfony</span><span>PHP</span><span>Merise</span><span>Base de données</span></div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <a class="project-image" href="assets/images/portfolio/portfolioFacture.PNG" target="_blank" rel="noopener noreferrer" aria-label="Voir la capture e-Pharma">
+              <img src="assets/images/portfolio/portfolioFacture.PNG" alt="Interface de gestion de ventes en pharmacie" loading="lazy">
+            </a>
+            <div class="project-content">
+              <span class="card-label">Projet académique &middot; 2023</span>
+              <h3>e-Pharma</h3>
+              <p>Système d'information pour organiser les stocks, les ventes et les données clients d'une pharmacie.</p>
+              <div class="tags"><span>Java EE</span><span>Merise</span><span>Gestion</span><span>Base de données</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="parcours" aria-labelledby="journey-title">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">04 / Parcours</p>
+            <h2 id="journey-title">Un parcours orienté web, projet et data.</h2>
+          </div>
+          
+        </div>
+
+        <div class="journey-grid">
+          <div>
+            <h3 class="timeline-title">Expériences professionnelles</h3>
+            <ol class="timeline">
+              <li>
+                <span>Juin 2024 - Aujourd'hui</span>
+                <h4>Développeur Full Stack &middot; Falicrea</h4>
+                <p>Développement web, automatisation, WordPress et contribution au suivi de projet en tant que coordinateur de projet web.</p>
+                <p>Réalisations : plateformes B2B, thèmes et plugins WordPress, widgets Elementor, résumés audio, maintenance et évolution de sites WordPress.</p>
+              </li>
+              <li>
+                <span>Février 2024 - Juin 2024</span>
+                <h4>Stagiaire Data science et développement web &middot; Caisse d'Epargne Madagascar</h4>
+                <p>Développement d'une application web d'analyse de panier de marché avec data mining et recommandations exploitables pour l'aide à la décision.</p>
+              </li>
+            </ol>
+          </div>
+
+          <div>
+            <h3 class="timeline-title">Formation</h3>
+            <ol class="timeline compact">
+              <li>
+                <span>2024 - 2025</span>
+                <h4>Master II en génie informatique</h4>
+                <p>Université de Toamasina.</p>
+              </li>
+              <li>
+                <span>2019 - 2020</span>
+                <h4>Licence en mathématiques, informatique et application</h4>
+                <p>Parcours informatique et mathématiques appliquées.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="competences" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">05 / Compétences</p>
+            <h2 id="skills-title">Des compétences organisées par usage concret.</h2>
+          </div>
+        </div>
+
+        <div class="skill-grid">
+          <article class="info-card">
+            <h3>Développement web</h3>
+            <p>Construire des interfaces, applications et plateformes web adaptées à un besoin précis.</p>
+            <div class="tags"><span>HTML/CSS</span><span>JavaScript</span><span>React</span><span>Symfony</span><span>Django</span><span>JEE</span></div>
+          </article>
+
+          <article class="info-card">
+            <h3>WordPress sur mesure</h3>
+            <p>Faire évoluer WordPress avec des thèmes, plugins, modules et intégrations personnalisés.</p>
+            <div class="tags"><span>Thème</span><span>Plugin</span><span>Elementor</span><span>WooCommerce</span><span>Tutor LMS</span></div>
+          </article>
+
+          <article class="info-card">
+            <h3>Projet, data et outils</h3>
+            <p>Relier les besoins métier, les données et les outils techniques pour produire des solutions utiles.</p>
+            <div class="tags"><span>Coordinateur de projet web</span><span>Pandas</span><span>Power BI</span><span>PostgreSQL</span><span>MySQL</span><span>Git/GitHub</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="cv" aria-labelledby="cv-title">
+      <div class="container cv-panel">
+        <div>
+          <p class="section-kicker">06 / CV</p>
+          <h2 id="cv-title">Un CV disponible en PDF.</h2>
+          <p>Le CV public complète le portfolio avec un format plus détaillé pour les recruteurs et partenaires.</p>
+        </div>
+        <a class="button button-primary" href="assets/doc/cv-jaonina-arlandot.pdf" target="_blank" rel="noopener noreferrer">Télécharger le CV</a>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div>
+          <p class="section-kicker">07 / Contact</p>
+          <h2 id="contact-title">Parlons de votre projet.</h2>
+          <p>Pour une création de site, une amélioration WordPress, une plateforme métier ou une collaboration, contactez-moi directement.</p>
+        </div>
+
+        <div class="contact-actions">
+          <a class="button button-light" href="mailto:jaoninaarlandot@gmail.com?subject=Contact%20depuis%20le%20portfolio">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 6h16v12H4z"></path><path d="m4 7 8 6 8-6"></path></svg>
+            Envoyer un e-mail
+          </a>
+          <a class="contact-link" href="https://www.linkedin.com/in/jaonina-arlandot" target="_blank" rel="noopener noreferrer" aria-label="Profil LinkedIn de Jaonina Arlandot">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6.5 10v8"></path><path d="M6.5 6v.01"></path><path d="M11 18v-8"></path><path d="M11 13.5c0-2 1.2-3.5 3.2-3.5 1.9 0 3.3 1.4 3.3 3.8V18"></path></svg>
+            <span>LinkedIn</span>
+          </a>
+          <a class="contact-link" href="https://github.com/Arlandot2" target="_blank" rel="noopener noreferrer" aria-label="Profil GitHub de Jaonina Arlandot">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M9 19c-4 1.2-4-2-5.5-2.5"></path><path d="M15 22v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6A4.6 4.6 0 0 0 18.7 7c.1-.3.5-1.7-.1-3.5 0 0-1.1-.3-3.6 1.3a12.3 12.3 0 0 0-6.5 0C6 3.2 4.9 3.5 4.9 3.5 4.3 5.3 4.7 6.7 4.8 7A4.6 4.6 0 0 0 3.5 10.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V22"></path></svg>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer class="site-footer"><div class="container footer-inner"><span>© <span id="year">2026</span> Jaonina Arlandot Ramanarintsoa</span><a href="#accueil">Retour en haut ↑</a></div></footer>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>&copy; <span id="year">2026</span> Jaonina Arlandot Ramanarintsoa</span>
+    </div>
+  </footer>
 </body>
 </html>
+
+
+
