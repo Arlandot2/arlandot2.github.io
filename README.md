@@ -1,61 +1,28 @@
 # Portfolio de Jaonina Arlandot Ramanarintsoa
 
-Site personnel statique publié sur GitHub Pages : [arlandot2.github.io](https://arlandot2.github.io/).
+Je suis développeur Full Stack. Je crée et fais évoluer des sites, des plateformes et des outils web adaptés aux besoins des entreprises. Ce portfolio présente mes services, quelques réalisations et mon parcours.
 
-## Objectif
+**[Voir le portfolio](https://arlandot2.github.io/)** · **[Me contacter](https://arlandot2.github.io/#contact)** · **[LinkedIn](https://www.linkedin.com/in/jaonina-arlandot)**
 
-Ce portfolio présente un profil de développeur full stack et coordinateur de projet web, avec une orientation claire : création, amélioration et maintenance de solutions web sur mesure pour accompagner l'évolution des entreprises.
+## Ce que je fais
 
-Le contenu public est volontairement sélectif. Le site ne reprend pas tout le CV : il met en avant le positionnement, les services, les réalisations principales, le parcours, les compétences, le CV PDF et les moyens de contact.
+- Développement de sites et d’applications web.
+- Création, personnalisation et maintenance de sites WordPress.
+- Automatisation et intégration d’outils.
+- Coordination de projets web et tests fonctionnels.
 
-## Structure publique
+## Réalisations présentées
 
-- `index.html` : contenu, structure de la page et métadonnées.
-- `assets/css/style.css` : mise en page, responsive, thèmes clair/sombre et animations.
-- `assets/script/script.js` : menu mobile, thème, année dynamique et interactions légères.
-- `assets/images/Arlandot.png` : photo principale.
-- `assets/images/portfolio/portfolioDash.PNG` : capture liée au projet data.
-- `assets/images/portfolio/portfolioFacture.PNG` : capture liée au projet e-Pharma.
-- `assets/doc/cv-jaonina-arlandot.pdf` : CV public téléchargeable.
+Le portfolio présente notamment une plateforme B2B WordPress, l’évolution d’une plateforme web et des sites avec des fonctionnalités sur mesure. Il montre aussi des projets en analyse de données, e-commerce avec Symfony et gestion de pharmacie.
 
-## Documents de travail
+## À propos du site
 
-- `doc/` contient les notes, wireframes, validations et sources de travail.
-- `doc/` est ignoré par Git et ne doit pas être publié.
-- Les documents sources du CV restent dans `doc/`.
+Le site est réalisé en HTML, CSS et JavaScript, sans étape de compilation. Il propose une navigation adaptée aux écrans mobiles et un choix de thème clair ou sombre.
 
-## Parcours utilisateur
-
-Le site guide le visiteur dans cet ordre :
-
-1. Comprendre qui est Arlandot et ce qu'il propose.
-2. Identifier les services utiles pour une entreprise.
-3. Voir les réalisations principales.
-4. Consulter les projets complémentaires.
-5. Comprendre le parcours professionnel.
-6. Scanner les compétences par familles.
-7. Télécharger le CV si besoin.
-8. Contacter Arlandot.
-
-## Lancer le site localement
-
-Ouvrir `index.html` dans un navigateur suffit. Pour reproduire les conditions de publication avec un serveur local :
+Pour le consulter localement, ouvrez `index.html` dans un navigateur. Vous pouvez aussi lancer un serveur local :
 
 ```sh
 python -m http.server 8000
 ```
 
-Puis ouvrir `http://localhost:8000`.
-
-## Mise à jour
-
-1. Modifier les textes principaux dans `index.html`.
-2. Garder les sections courtes et orientées visiteur : besoin, solution, valeur, preuves.
-3. Ajouter les nouvelles images publiques dans `assets/images/`.
-4. Remplacer le CV public dans `assets/doc/cv-jaonina-arlandot.pdf`.
-5. Garder les brouillons, sources et documents non publics dans `doc/`.
-
-## Publication
-
-Le dépôt correspond à un site utilisateur GitHub Pages. Après validation, commit et push sur la branche configurée pour Pages, GitHub publie les fichiers statiques.
-
+Puis ouvrez `http://localhost:8000`.
